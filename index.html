@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en" ng-app="userApp">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJs Routing</title>
+     <!--Include the library -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+     rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" 
+     rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Angular Library..-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular-route.min.js">
+    </script> 
+    <script src="app.js"></script>
+    <script src="userService.js"></script>
+</head>
+<body style="font-family: 'Comic Sans MS'">
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#/">User App</a>
+        </div>
+        <ul class="nav navbar-nav">
+             <!-- link for home and User view-->
+            <li class="active"><a href="#/">Home</a></li>
+            <li><a href="#users/">Users</a></li>
+        </ul>
+    </div>
+</nav>
+  <!--ngView :- that include the rendered template html-->
+    <div ng-view="">
+    </div>
+ </body>
+</html>
+

@@ -1,0 +1,55 @@
+<style>
+.user-img{
+    background: url("https://www.dropbox.com/s/0ykfs0lw53ab58w/Avtar.png?raw=1");
+    background-repeat: no-repeat;
+    height: 145px;
+}
+    .panel-div{ background-color: rgb(34, 34, 34);  color: rgb(255, 255, 255);  
+       padding: 10px 0px 25px; }
+    .text-center{text-align: center}
+    .user-detail{padding: 16px 0 0 }
+    .user-info{background-color: #0000A1; color: rgb(255, 255, 255); 
+ border-radius: 15px 0px 0px 15px;
+ padding: 43px 0px;}
+    .margin-top-50{margin-top: 30px}
+</style>
+<div class="row text-center" style="background-color: gainsboro;padding: 8px;
+font-weight: 400;margin-bottom: 10px">Users Detail's</div>
+
+<div class="container ng-scope" id="users" >
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2 well margin-top-50">
+           <div class="col-md-12 panel-div">
+               <div class="col-md-12 text-center">
+                   <h3>{{user.name}} detail's.</h3>
+               </div>
+              <div class="col-md-12 user-detail">
+                  <div class="col-md-3">
+                      <div class="user-img"></div>
+                  </div>
+                  <div class="col-md-9 user-info">
+                      <div class="col-md-12">
+                          <div class="col-md-4 ">Name</div>
+                          <div class="col-md-8 ">{{user.name}}</div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="col-md-4">Age</div>
+                          <div class="col-md-4">{{user.age}}</div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="col-md-4">Phone Number</div>
+                          <div class="col-md-8">{{user.phoneNo}}</div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="col-md-4">Address</div>
+                          <div class="col-md-8">{{user.address}}</div>
+                      </div>
+
+                  </div>
+              </div>
+           </div>
+
+        </div>
+
+    </div>
+</div>  
